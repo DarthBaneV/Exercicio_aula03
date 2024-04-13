@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Médica Bem-Estar</title>
+</head>
+
+<body>
+    <main>
+        <h2>Agendamento de Consulta</h2>
+        <form action="">
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <label for="nome">Nome Completo: </label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                <br>
+                <label for="email">Endereço de Email: </label>
+                <input type="email" id="email" name="email" placeholder="Digite seu endereço de email" required>
+                <br>
+                <label for="telefone">Telefone: </label>
+                <input type="text" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+                <br>
+                <label for="idade">Idade: </label>
+                <input type="text" id="idade" name="idade" maxlength="3" size="3" required>
+                <br>
+                <label for="">Especialidade Médica: </label>
+                <select name="Especialidade" id="Especialidade" required>
+                    <option value="">Selecione uma especialidade</option>
+                    <option value="Dermatologia">Dermatologia</option>
+                    <option value="Oncologia">Oncologia</option>
+                    <option value="Cardiologia">Cardiologia</option>
+                    <option value="Neurologia">Neurologia</option>
+                    <option value="Outros">Outros</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferências de Horário</legend>
+                <label for="data">Data Preferencial: </label>
+                <input type="date" id="data" name="data" required>
+                <br>
+                <label for="hora">Horário Preferencial: </label>
+                <input type="time" id="hora" name="hora" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Observações Adicionais</legend>
+                <textarea name="Observações" id="Observações" cols="20" rows="3"
+                    placeholder="Digite aqui suas observações" required></textarea>
+            </fieldset>
+
+            <button type="submit">Agendar Consulta</button>
+        </form>
+    </main>
+</body>
+
+</html>
